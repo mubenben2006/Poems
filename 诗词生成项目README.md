@@ -22,7 +22,7 @@
 └── requirements.txt    依赖列表
 
 
-二、快速运行（老师检查用）
+二、快速运行
 -----------------------------------
 
 1. 安装依赖:
@@ -36,10 +36,6 @@
    → 打印指标对比表 (押韵率/平仄/语义相关度/重复度)
    → 全部诗歌存入 outputs/samples/*.txt
 
-3. 生成 Word 报告:
-   python make_report.py
-   → 输出: 七言绝句生成系统报告.docx
-
 
 三、单独测试某个模型
 -----------------------------------
@@ -51,7 +47,7 @@
 
 或命令行直接:
    python generate.py -m lstm -i "春风送暖入屠苏"     首句续写
-   python generate.py -m transformer --acrostic "弱智刚子"  藏头诗
+   python generate.py -m transformer --acrostic "春暖花开"  藏头诗
 
 
 四、Checkpoint 位置
